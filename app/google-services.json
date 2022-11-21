@@ -1,33 +1,33 @@
 {
   "project_info": {
-    "project_number": "796165074920",
-    "project_id": "testappart-46429",
-    "storage_bucket": "testappart-46429.appspot.com"
+    "project_number": "228536769386",
+    "project_id": "wind-of-win",
+    "storage_bucket": "wind-of-win.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:796165074920:android:60b468ab9d056c6632fe5d",
+        "mobilesdk_app_id": "1:228536769386:android:01a990f6e6234ea8e52313",
         "android_client_info": {
-          "package_name": "da.ssuwiv.testappart"
+          "package_name": "wind.win.com"
         }
       },
       "oauth_client": [
         {
-          "client_id": "796165074920-esssojgmigcsqhjg8jkkbibmksf7uhqv.apps.googleusercontent.com",
+          "client_id": "228536769386-78u1v7nnrdb3ir5c9u8sq2usve99c19o.apps.googleusercontent.com",
           "client_type": 3
         }
       ],
       "api_key": [
         {
-          "current_key": "AIzaSyAtu_m_DFIDM_y5cKReNPDBi5UsPXPhfDY"
+          "current_key": "AIzaSyA-5EpB1gyq9vv_22Jp8oTW0R549MOWW-0"
         }
       ],
       "services": {
         "appinvite_service": {
           "other_platform_oauth_client": [
             {
-              "client_id": "796165074920-esssojgmigcsqhjg8jkkbibmksf7uhqv.apps.googleusercontent.com",
+              "client_id": "228536769386-78u1v7nnrdb3ir5c9u8sq2usve99c19o.apps.googleusercontent.com",
               "client_type": 3
             }
           ]

@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/back"
+    tools:context=".WowGameFragment">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="320dp"
+        android:layout_height="wrap_content"
+        android:adjustViewBounds="true"
+        android:src="@drawable/bakance_panel"
+        app:layout_constraintBottom_toTopOf="@+id/ivWowDealerCard"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.5" />
+
+    <ImageView
+        android:id="@+id/ivWowPlayerCard"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="12dp"
+        android:adjustViewBounds="true"
+        android:src="@drawable/diamonds_a"
+        app:layout_constraintBottom_toTopOf="@+id/bDealWowCards"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+    <ImageView
+        android:id="@+id/ivWowDealerCard"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="95dp"
+        android:adjustViewBounds="true"
+        android:src="@drawable/diamonds_k"
+        app:layout_constraintBottom_toTopOf="@+id/textView2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvWowGameScoreText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/karlasemibold"
+        android:text="11750"
+        android:textColor="#F3F3EB"
+        android:textSize="37sp"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView"
+        app:layout_constraintEnd_toEndOf="@+id/imageView"
+        app:layout_constraintStart_toStartOf="@+id/imageView"
+        app:layout_constraintTop_toTopOf="@+id/imageView" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/karlasemibold"
+        android:text="Who will win?"
+        android:textColor="#F3F3EB"
+        android:textSize="36sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/bDealWowCards"
+        android:layout_width="220dp"
+        android:layout_height="72dp"
+        android:layout_marginEnd="115dp"
+        android:layout_marginBottom="25dp"
+        android:background="@drawable/button_menu"
+        android:fontFamily="@font/karlasemibold"
+        android:text="Deal cards"
+        android:textAllCaps="false"
+        android:textSize="32sp"
+        android:textColor="#0F100F"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageView
+        android:id="@+id/ivWowBetButton"
+        android:layout_width="85dp"
+        android:layout_height="85dp"
+        android:src="@drawable/bet"
+        app:layout_constraintBottom_toBottomOf="@+id/bDealWowCards"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/bDealWowCards"
+        app:layout_constraintTop_toTopOf="@+id/bDealWowCards" />
+
+    <TextView
+        android:id="@+id/tvWowGameBetText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/karlasemibold"
+        android:text="150"
+        android:textAllCaps="false"
+        android:textColor="#0F100F"
+        android:textSize="25sp"
+        app:layout_constraintBottom_toBottomOf="@+id/ivWowBetButton"
+        app:layout_constraintEnd_toEndOf="@+id/ivWowBetButton"
+        app:layout_constraintStart_toStartOf="@+id/ivWowBetButton"
+        app:layout_constraintTop_toTopOf="@+id/ivWowBetButton" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

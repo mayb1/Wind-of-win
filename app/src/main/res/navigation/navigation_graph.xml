@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation_graph"
+    app:startDestination="@id/navigation_wowMenu">
+    <fragment
+        android:id="@+id/navigation_wowMenu"
+        android:name="wind.win.com.WowMenuFragment"
+        android:label="fragment_wow_menu"
+        tools:layout="@layout/fragment_wow_menu" >
+        <action
+            android:id="@+id/action_wowMenuFragment_to_wowPrivacyPolicyFragment"
+            app:destination="@id/navigation_wowPrivacyPolicy" />
+        <action
+            android:id="@+id/action_wowMenuFragment_to_wowGameFragment"
+            app:destination="@id/navigation_wowGame" />
+    </fragment>
+    <fragment
+        android:id="@+id/navigation_wowPrivacyPolicy"
+        android:name="wind.win.com.WowPrivacyPolicyFragment"
+        android:label="fragment_wow_privacy_policy"
+        tools:layout="@layout/fragment_wow_privacy_policy" >
+        <action
+            android:id="@+id/action_wowPrivacyPolicyFragment_to_wowMenuFragment"
+            app:destination="@id/navigation_wowMenu" />
+    </fragment>
+    <fragment
+        android:id="@+id/navigation_wowGame"
+        android:name="wind.win.com.WowGameFragment"
+        android:label="fragment_wow_game"
+        tools:layout="@layout/fragment_wow_game" />
+</navigation>

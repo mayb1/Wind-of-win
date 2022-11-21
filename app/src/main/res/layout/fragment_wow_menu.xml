@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/back"
+    tools:context=".WowMenuFragment">
+
+    <TextView
+        android:id="@+id/tvWowAppName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/karlasemibold"
+        android:gravity="center"
+        android:text="@string/app_name"
+        android:textColor="#0F100F"
+        android:textSize="58sp"
+        app:layout_constraintBottom_toTopOf="@+id/bWowGame"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:textAllCaps="false" />
+
+    <Button
+        android:id="@+id/bWowExit"
+        android:layout_width="321dp"
+        android:layout_height="82dp"
+        android:layout_marginBottom="85dp"
+        android:background="@drawable/button_menu"
+        android:fontFamily="@font/karlasemibold"
+        android:text="Exit Game"
+        android:textAllCaps="false"
+        android:textColor="#0F100F"
+        android:textSize="36sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/bWowPrivPol"
+        android:layout_width="321dp"
+        android:layout_height="82dp"
+        android:layout_marginBottom="55dp"
+        android:background="@drawable/button_menu"
+        android:fontFamily="@font/karlasemibold"
+        android:text="Privacy Policy"
+        android:textAllCaps="false"
+        android:textColor="#0F100F"
+        android:textSize="36sp"
+        app:layout_constraintBottom_toTopOf="@+id/bWowExit"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/bWowGame"
+        android:layout_width="321dp"
+        android:layout_height="82dp"
+        android:layout_marginBottom="55dp"
+        android:background="@drawable/button_menu"
+        android:fontFamily="@font/karlasemibold"
+        android:text="Start Game"
+        android:textAllCaps="false"
+        android:textColor="#0F100F"
+        android:textSize="36sp"
+        app:layout_constraintBottom_toTopOf="@+id/bWowPrivPol"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
